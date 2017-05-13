@@ -6,7 +6,7 @@
 	
 	x_total, y_total and sub_total merge the previous datasets for further analysis.
 	
-	features contains the correct names for the x_total dataset, which are applied to the column names stored in mean_and_std_features, a numeric vector used to extract the desired data.
+	features contains the correct names for the x_total dataset, which are applied to the column names stored in selected_var, a numeric vector used to extract the desired data.
 	
 	A similar approach is taken with activity names through the activity_lables variable and stored in y_total.
 	
