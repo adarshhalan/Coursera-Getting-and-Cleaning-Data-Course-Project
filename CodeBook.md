@@ -3,11 +3,16 @@
 ## The variables in the tidy data
 
 	x_train, y_train, x_test, y_test, sub_train,  sub_test, variables_names and activity_lables contain the data from the downloaded files.
-	x_total, y_total and sub_total merge the previous datasets to further analysis.
+	
+	x_total, y_total and sub_total merge the previous datasets for further analysis.
+	
 	features contains the correct names for the x_total dataset, which are applied to the column names stored in mean_and_std_features, a numeric vector used to extract the desired data.
-	A similar approach is taken with activity names through the activity_lables variable.
+	
+	A similar approach is taken with activity names through the activity_lables variable and stored in y_total.
+	
 	total merges x_total, y_total and sub_total in a big dataset.
-	Finally, averages_data contains the relevant averages which will be later stored in a .txt file. ddply() from the plyr package is used to apply colMeans() and ease the development.
+	
+	Finally, total_mean contains the relevant averages which will be later stored in a tidydata.txt file.
 
 	Tidy data contains 180 rows and 68 columns. Each row has averaged variables for each subject and each activity.
 
